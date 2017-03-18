@@ -33,10 +33,16 @@
 #1      gdbinit
 -------
 
+添加
 
 ```cpp
 git remote  add -f gdbinit git@github.com:gdbinit/Gdbinit.git
 git subtree add --prefix=gdbinit gdbinit master --squash
+```
+
+更新 
+```cpp
+git subtree pull --prefix=gdbinit git@github.com:gdbinit/Gdbinit.git master --squash
 ```
 
 #2      gef
@@ -46,10 +52,24 @@ git remote  add -f gef git@github.com:hugsy/gef.git
 git subtree add --prefix=gef gef master --squash
 ```
 
+更新 
+```cpp
+git subtree pull --prefix=gef git@github.com:hugsy/gef.git master --squash
+```
+
 #3      peda
 -------
 
+
+添加　
 ```cpp
 git remote  add -f peda git@github.com:longld/peda.git  
 git subtree add --prefix=peda peda master -squash
+```
+
+
+更新 
+
+```cpp
+git subtree pull --prefix=peda git@github.com:longld/peda.git master --squash
 ```
